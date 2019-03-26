@@ -18,6 +18,7 @@ public class ScannerBug {
 
         System.out.print("What is your age? ");
         age = in.nextInt();
+        in.nextLine(); // extra newline needed for reading str after int, have to read in the trailing newline character otherwise remaining data will not be read
         System.out.print("What is your name? ");
         name = in.nextLine();
         System.out.printf("Hello %s, age %d\n", name, age);
